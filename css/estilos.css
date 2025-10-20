@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*=====cabecera=====*/
+.contenedor_busqueda{
+    background-color: #e26f11;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.contenedor_busqueda .logo{
+    cursor: pointer;
+}
+.contenedor_busqueda .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.contenedor_busqueda .logo img:hover{
+    transform: scale(1.2);
+}
