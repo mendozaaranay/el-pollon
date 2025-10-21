@@ -4,14 +4,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/*=====cabecera=====*/
+/*===============CABECERA==============*/
 .contenedor_busqueda{
     background-color: #FFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 55px;
-
+    height: 60px;
 }
 .contenedor_busqueda .logo{
     cursor: pointer;
@@ -22,11 +21,19 @@
     transition: all 0.3s;
 }
 .contenedor_busqueda .logo img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+.conte_cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conte_cabecera a img{
+    height: 30px;
 }
 form{
-    background-color: rgb(168, 168, 168);
-    width:250px;
+    background-color: rgb(196, 194, 194);
+    width:260px;
     height: 40px;
     border-radius: 30px;
     display: flex;
@@ -45,7 +52,7 @@ form input::placeholder{
     color: white;
 }
 form button{
-    background-color: #EA4141;
+    background-color: #F35f5F;
     border: 0;
     width: 35px;
     height: 35px;
@@ -57,14 +64,16 @@ button i{
     color: white;
     font-size: 18px;
 }
+form button:hover{
+    background-color: #EA4141;
+}
 .contenedor_busqueda a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
 }
 .contenedor_busqueda a:hover{
-    color: #EA4141;
-    transform: scale(1.1);
+    font-weight: bold;
 }
 
 .rPedido{
@@ -77,19 +86,42 @@ button i{
 }
 .contenedor_nav{
     background-color: #F35f5F;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    display: flex;
+    height: 60px;
     align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
-a{
+.contenedor_nav .nav-links li a{
     font-size: 15px;
-    color: #eceff1;
+    color: white;
     text-decoration: none;
 }
+.contenedor_nav .nav-links li:hover{
+    transform: scale(1.2);
+}
+/*.nav-links{
+    
+}*/
 .contenedor_nav .nav-links li{
     display: inline-block;
-    padding: 0,0;
-    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+/*=======================================*/
+/*================MAIN*==================*/
+
+
+/*=======================================*/
+/*===============FOOTER==================*/
+.contenedor-footer{
+    background-color: #EA4141;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-footer a{
+    text-decoration: none;
+    color: white;
 }
