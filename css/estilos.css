@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*=====cabecera=====*/
+.contenedor_busqueda{
+    background-color: #FFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+
+}
+.contenedor_busqueda .logo{
+    cursor: pointer;
+}
+.contenedor_busqueda .logo img{
+    height: 58px;
+    width: auto;
+    transition: all 0.3s;
+}
+.contenedor_busqueda .logo img:hover{
+    transform: scale(1.2);
+}
+form{
+    background-color: rgb(168, 168, 168);
+    width:250px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 4px;
+}
+form input{
+    font-size: 16px;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+form input::placeholder{
+    color: white;
+}
+form button{
+    background-color: #EA4141;
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    order: 0;
+}
+button i{
+    color: white;
+    font-size: 18px;
+}
+.contenedor_busqueda a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.contenedor_busqueda a:hover{
+    color: #EA4141;
+    transform: scale(1.1);
+}
+
+.rPedido{
+    background-color: #EA4141;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contenedor_nav{
+    background-color: #F35f5F;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+a{
+    font-size: 15px;
+    color: #eceff1;
+    text-decoration: none;
+}
+.contenedor_nav .nav-links li{
+    display: inline-block;
+    padding: 0,0;
+    justify-content: space-between;
+}
