@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*SELECTOR UNIVERSAR - APLICA PARA TODOS LOS ELEMENTOS*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Montserrat";
 }
 
-/*=====cabecera=====*/
+/*BARRA DE NAVEGACIÓN*/
+
+/*=== CABECERA ===*/
 .contenedor_busqueda{
     background-color: #FFFF;
     display: flex;
@@ -21,9 +26,9 @@
     width: auto;
     transition: all 0.3s;
 }
-.contenedor_busqueda .logo img:hover{
+/*.contenedor_busqueda .logo img:hover{
     transform: scale(1.1);
-}
+}*/
 .conte_cabecera{
     display: flex;
     justify-content: center;
