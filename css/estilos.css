@@ -11,108 +11,97 @@
 /*BARRA DE NAVEGACIÓN*/
 
 /*=== CABECERA ===*/
-.contenedor_busqueda{
+.contenedor_cabecera{
     background-color: #FFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 55px;
+    height: 80px;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
-.contenedor_busqueda .logo{
+.contenedor_cabecera .logo{
     cursor: pointer;
 }
-.contenedor_busqueda .logo img{
+.contenedor_cabecera .logo img{
     height: 58px;
-    width: auto;
+    width: 100%;
     transition: all 0.3s;
 }
-/*.contenedor_busqueda .logo img:hover{
-    transform: scale(1.1);
-}*/
-.conte_cabecera{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.conte_cabecera a img{
-    height: 30px;
-}
-form{
-    background-color: rgb(196, 194, 194);
-    width:260px;
-    height: 40px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 4px;
-}
-form input{
-    font-size: 16px;
-    flex: 1;
-    border: 0;
-    outline: 0;
-    background-color: transparent;
-}
-form input::placeholder{
-    color: white;
-}
-form button{
-    background-color: #F35f5F;
-    border: 0;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    order: 0;
-}
-button i{
-    color: white;
-    font-size: 18px;
-}
-form button:hover{
-    background-color: #EA4141;
-}
-.contenedor_busqueda a{
+.contenedor_cabecera a{
+    position: relative;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
+    margin: 15px;
 }
-.contenedor_busqueda a:hover{
+.contenedor_cabecera a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: scaleX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 2px;
+    background-color: #AA1515;
+    transition: transfor 500ms ease;
+}
+.contenedor_cabecera a:hover{
+    color: #AA1515;
     font-weight: bold;
 }
-
+.contenedor_cabecera a:hover::after{
+    transform: translateX(-50%) scaleX(1);
+}
+.btn_whatsapp{
+    position: relative;
+    background-color: #E21C1C;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-radius: 25px;
+    width: 360px;
+    height: 45px;
+}
+.btn_whatsapp a{
+    color: white;
+    margin-left: 10px;
+}
+.btn_whatsapp img{
+    height: 100%;
+    width: 28px;
+    color: white;
+}
+.btn_whatsapp:hover{
+    background-color: #AA1515;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_whatsapp a:hover{
+    color: white;
+}
 .rPedido{
-    background-color: #EA4141;
-    height: 30px;
+    background-color: #AA1515;
+    height: 60px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
-.contenedor_nav{
-    background-color: #F35f5F;
-    height: 60px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
+.rPedido img{
+    width: 38px;
+    height: 100%;
+    margin-right: 10px;
 }
-.contenedor_nav .nav-links li a{
-    font-size: 15px;
-    color: white;
+.rPedido a{
     text-decoration: none;
+    color: white;
 }
-.contenedor_nav .nav-links li:hover{
-    transform: scale(1.2);
-}
-/*.nav-links{
-    
-}*/
-.contenedor_nav .nav-links li{
-    display: inline-block;
-    margin-right: 25px;
-    margin-left: 25px;
-}
+
 /*=======================================*/
 /*================MAIN*==================*/
 /*=================== SECCIONES DEL MENÚ ===================*/
