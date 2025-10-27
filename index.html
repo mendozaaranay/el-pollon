@@ -1,43 +1,194 @@
-    <title>Document</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollería El Pollón</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://kit.fontawesome.com/53283f8ced.js" crossorigin="anonymous"></script> <!--kit para el uso del ícono de búsqueda-->>
+    <script src="https://kit.fontawesome.com/53283f8ced.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <!-- CABECERA -->
     <div class="contenedor_busqueda">
         <div class="logo">
-            <img src="img/logo_elPollon.jpg" alt="Logo EL Pollon">
+            <img src="img/logo_elPollon.jpg" alt="Logo El Pollón">
         </div>
-        <a href="">Menu</a>
-        <a href="">Mis pedidos</a>
-        <form>
-            <input type="text" placeholder="¿Qué esta buscando..?">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button> <!--el logo de busqueda se inserta en el button-->
-        </form>
-        <a href="">+56 900979202</a>
-        <a href="">S/. 0.00</a>
+        <a href="#menu">Menú</a>
+        <a href="#pedidos">Mis pedidos</a>
+        <div>
+            <form>
+                <input type="text" placeholder="¿Qué está buscando..?">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="conte_cabecera">
+            <a href="#"><img src="img/icono_whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://wa.me/56900979202" target="_blank">+56 900979202</a>
+        </div>
+        <div class="conte_cabecera">
+            <a href="#"><img src="img/icono_carritoCompras.png" alt="Carrito"></a>
+            <a href="#">S/. 0.00</a>
+        </div>
     </div>
+
     <div class="rPedido">
         <p>Realiza tu pedido con entrega a domicilio</p>
     </div>
+
     <header>
-          <nav class="contenedor_nav">
-           <ul class="nav-links">
-                <li><a href="#">OFERTAS FAMILIARES</a></li>
-                <li><a href="#">OFERTAS PARA DOS</a></li>
-                <li><a href="#">OFERTAS SEMANALES</a></li>
-                <li><a href="#">AGREGADOS</a></li>
-                <li><a href="#">PLATOS EXTRAS</a></li>
-                <li><a href="#">PLATOS EXTRAS</a></li>
-                <li><a href="#">PLATOS EXTRAS</a></li>
-                 <li><a href="#">PLATOS EXTRAS</a></li>
-           </ul> 
+        <nav class="contenedor_nav">
+            <ul class="nav-links">
+                <li><a href="#familiares">OFERTAS FAMILIARES</a></li>
+                <li><a href="#para-dos">OFERTAS PARA DOS</a></li>
+                <li><a href="#semanales">OFERTAS SEMANALES</a></li>
+                <li><a href="#agregados">AGREGADOS</a></li>
+                <li><a href="#extras">PLATOS EXTRAS</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- BANNER PRINCIPAL -->
     <main>
+        <section>
+            <div>
+                <img src="img/banner_foto1.jpg" alt="">
+            </div>
+        </section>
 
+        <!-- SECCIÓN MENÚ -->
+        <section id="menu">
+            <h2 style="text-align:center; color:#EA4141; margin-top:40px;">Nuestro Menú</h2>
+            <p style="text-align:center;">Descubre nuestras promociones, combos y platos especiales</p>
+        </section>
+
+        <!-- PROMOCIONES -->
+        <section id="familiares" style="padding:40px;">
+            <h3 style="color:#EA4141;">Ofertas Familiares</h3>
+            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+                <div class="menu-item">
+                    <img src="img/combo familiar 1.webp" alt="Combo Familiar 1" style="width:250px; border-radius:10px;">
+                    <p>1 Pollo a la brasa + Papas + Ensalada + Gaseosa 1.5L</p>
+                    <strong>S/ 59.90</strong>
+                </div>
+                <div class="menu-item">
+                    <img src="" alt="Combo Familiar 2" style="width:250px; border-radius:10px;">
+                    <p>2 Pollos a la brasa + Papas + Ensaladas + 2 Gaseosas</p>
+                    <strong>S/ 110.00</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMBOS PARA DOS -->
+        <section id="para-dos" style="padding:40px; background-color:#fff6f6;">
+            <h3 style="color:#EA4141;">Ofertas para Dos</h3>
+            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+                <div class="menu-item">
+                    <img src="img/combo para dos 1.jpg" alt="Combo para dos" style="width:250px; border-radius:10px;">
+                    <p>½ Pollo + Papas + Ensalada + Gaseosa 1L</p>
+                    <strong>S/ 34.90</strong>
+                </div>
+                <div class="menu-item">
+                    <img src="img/combo para dos 2 ..png" alt="Combo doble" style="width:250px; border-radius:10px;">
+                    <p>¼ Pollo + Chaufa + Gaseosa</p>
+                    <strong>S/ 29.90</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- AGREGADOS -->
+        <section id="agregados" style="padding:40px;">
+            <h3 style="color:#EA4141;">Agregados</h3>
+            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+                <div class="menu-item">
+                    <img src="img/papas fritas.webp" alt="Papas fritas" style="width:200px; border-radius:10px;">
+                    <p>Papas Fritas</p>
+                    <strong>S/ 6.00</strong>
+                </div>
+                <div class="menu-item">
+                    <img src="img/porcion ensalada.jpg" alt="Ensalada" style="width:200px; border-radius:10px;">
+                    <p>Ensalada Fresca</p>
+                    <strong>S/ 4.00</strong>
+                </div>
+                <div class="menu-item">
+                    <img src="img/arrozchaufa.jpg" alt="Arroz" style="width:200px; border-radius:10px;">
+                    <p>Porción de arroz</p>
+                    <strong>S/ 3.00</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLATOS EXTRAS -->
+        <section id="extras" style="padding:40px; background-color:#fff6f6;">
+            <h3 style="color:#EA4141;">Platos Extras</h3>
+            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+                <div class="menu-item">
+                    <img src="img/lomo saltado.jpg" alt="lomo saltado" style="width:250px; border-radius:10px;">
+                    <p>Lomo saltado + Gaseosa personal</p>
+                    <strong>S/ 20.00</strong>
+                </div>
+                <div class="menu-item">
+                    <img src="img/pollo a la plancha.jpg" alt="Pollo a la Plancha" style="width:250px; border-radius:10px;">
+                    <p>Pollo a la Plancha con arroz y papas</p>
+                    <strong>S/ 22.00</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEBIDAS -->
+        <section id="bebidas" style="padding:40px;">
+            <h3 style="color:#EA4141;">Bebidas</h3>
+            <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+                <div class="menu-item">
+                    <img src="img/inca kola.webp" alt="Inca Kola" style="width:150px; border-radius:10px;">
+                    <p>Inca Kola 1.5L</p>
+                    <strong>S/ 6.00</strong>
+                </div>
+                <div class="menu-item">
+                    <img src="img/coca cola.webp" alt="Coca Cola" style="width:150px; border-radius:10px;">
+                    <p>Coca Cola 1.5L</p>
+                    <strong>S/ 6.00</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" style="padding:50px; text-align:center;">
+            <h2 style="color:#EA4141;">Sobre Nosotros</h2>
+            <p style="max-width:800px; margin:auto;">
+                En Pollería El Pollón nos apasiona ofrecer el mejor pollo a la brasa, 
+                preparado con recetas caseras y los ingredientes más frescos. 
+                Somos un negocio familiar con más de 10 años de experiencia, 
+                comprometido con brindar calidad, sabor y un excelente servicio a todos nuestros clientes.
+            </p>
+            <img src="algunaimagen del local" alt="Local El Pollón" style="margin-top:20px; width:80%; border-radius:20px;">
+        </section>
+
+        <!-- CENTRO DE AYUDA -->
+        <section id="ayuda" style="background-color:#fff6f6; padding:50px;">
+            <h2 style="color:#EA4141; text-align:center;">Centro de Ayuda</h2>
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px; margin-top:20px;">
+                <div>
+                    <h4>Términos y condiciones</h4>
+                    <p>Puedes revisar nuestras políticas de servicio, horarios y métodos de entrega.</p>
+                </div>
+                <div>
+                    <h4>Política de privacidad</h4>
+                    <p>Protegemos tus datos personales y respetamos tu información.</p>
+                </div>
+                <div>
+                    <h4>Libro de reclamaciones</h4>
+                    <p>¿Algún inconveniente? Accede a nuestro libro de reclamaciones en línea.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
 
-    </footer>
->>>>>>> aa934a43a177d66a8c8e17d8bca04795a7d26929
+    <!-- FOOTER -->
+    <div class="contenedor-footer">
+        <footer>
+            <p><a href="#" target="_blank">&copy; 2025 Pollería El Pollón</a> | Todos los derechos reservados.</p>
+        </footer>
+    </div>
 </body>
 </html>

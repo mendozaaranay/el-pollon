@@ -22,11 +22,19 @@
     transition: all 0.3s;
 }
 .contenedor_busqueda .logo img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+.conte_cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conte_cabecera a img{
+    height: 30px;
 }
 form{
-    background-color: rgb(168, 168, 168);
-    width:250px;
+    background-color: rgb(196, 194, 194);
+    width:260px;
     height: 40px;
     border-radius: 30px;
     display: flex;
@@ -45,7 +53,7 @@ form input::placeholder{
     color: white;
 }
 form button{
-    background-color: #EA4141;
+    background-color: #F35f5F;
     border: 0;
     width: 35px;
     height: 35px;
@@ -57,14 +65,16 @@ button i{
     color: white;
     font-size: 18px;
 }
+form button:hover{
+    background-color: #EA4141;
+}
 .contenedor_busqueda a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
 }
 .contenedor_busqueda a:hover{
-    color: #EA4141;
-    transform: scale(1.1);
+    font-weight: bold;
 }
 
 .rPedido{
@@ -77,19 +87,234 @@ button i{
 }
 .contenedor_nav{
     background-color: #F35f5F;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    display: flex;
+    height: 60px;
     align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
-a{
+.contenedor_nav .nav-links li a{
     font-size: 15px;
-    color: #eceff1;
+    color: white;
     text-decoration: none;
 }
+.contenedor_nav .nav-links li:hover{
+    transform: scale(1.2);
+}
+/*.nav-links{
+    
+}*/
 .contenedor_nav .nav-links li{
     display: inline-block;
-    padding: 0,0;
-    justify-content: space-between;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+/*=======================================*/
+/*================MAIN*==================*/
+/*=================== SECCIONES DEL MENÚ ===================*/
+
+/* Sección general */
+#menu {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#menu h2 {
+    color: #EA4141;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#menu p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Cada categoría de menú (familiares, para dos, etc.) */
+.menu-item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item p {
+    color: #333;
+    margin: 10px 0;
+}
+
+.menu-item strong {
+    color: #EA4141;
+    font-size: 18px;
+}
+
+/* Titulares de cada categoría */
+section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*=================== SECCIONES DEL MENÚ ===================*/
+
+/* Sección general */
+#menu {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#menu h2 {
+    color: #EA4141;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#menu p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Cada categoría de menú (familiares, para dos, etc.) */
+.menu-item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item p {
+    color: #333;
+    margin: 10px 0;
+}
+
+.menu-item strong {
+    color: #EA4141;
+    font-size: 18px;
+}
+
+/* Titulares de cada categoría */
+section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*=================== SECCIÓN "NOSOTROS" ===================*/
+#nosotros {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#nosotros h2 {
+    color: #EA4141;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#nosotros p {
+    font-size: 17px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#nosotros img {
+    margin-top: 25px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/*=================== SECCIÓN "CENTRO DE AYUDA" ===================*/
+#ayuda {
+    background-color: #fff6f6;
+    padding: 60px 40px;
+}
+
+#ayuda h2 {
+    color: #EA4141;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#ayuda div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+#ayuda h4 {
+    color: #EA4141;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#ayuda p {
+    color: #333;
+    max-width: 300px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/*=================== ESTILO DE BOTONES ===================*/
+.menu-item button {
+    background-color: #EA4141;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover {
+    background-color: #c63131;
+}
+
+
+/*===============FOOTER==================*/
+.contenedor-footer{
+    background-color: #EA4141;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-footer a{
+    text-decoration: none;
+    color: white;
 }
