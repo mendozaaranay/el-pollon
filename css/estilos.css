@@ -1,41 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*SELECTOR UNIVERSAR - APLICA PARA TODOS LOS ELEMENTOS*/
+/*CONFIGURACIÓN UNIVERSAR - APLICA PARA TODOS LOS ELEMENTOS*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
+    font-size: 16px;
 }
-
-/*BARRA DE NAVEGACIÓN*/
-
-/*=== CABECERA ===*/
+/*===== BARRA DE NAVEGACIÓN =====*/
+/*CABECERA*/
 .contenedor_cabecera{
-    background-color: #FFFF;
+    position: sticky;
     display: flex;
+    background-color: #FFFF;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 60px;
     width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 2%;
+    padding-right: 2%;
+    top: 0px;
+    z-index: 1000;
 }
+/*SECCIÓN DEL LOGO EN LA CABECERA*/
 .contenedor_cabecera .logo{
-    cursor: pointer;
+    cursor: pointer; 
+    margin-right: auto;
+    margin:10px ;
 }
+/*CONTENEDOR DE IMAGEN LOGO*/
 .contenedor_cabecera .logo img{
-    height: 58px;
+    height: 60px;
     width: 100%;
-    transition: all 0.3s;
 }
+/*MENÚ DE OPCIONES EN LA CABECERA*/
 .contenedor_cabecera a{
     position: relative;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-    margin: 15px;
-}
+    color: #3C3636;
+    font-size: 15px;
+    margin: 10px;
+    margin-left: auto;
+    font-weight: bold;
+    }
+/*UNDERLINE DE LAS OPCIONES DEL MENÚ EN ESTADO NORMAL*/
 .contenedor_cabecera a::after{
     content: '';
     position: absolute;
@@ -45,16 +54,19 @@
     transform-origin: center;
     width: 100%;
     height: 2px;
-    background-color: #AA1515;
-    transition: transfor 500ms ease;
+    background-color: #E21C1C;
+    transition: transform 50ms ease;
 }
-.contenedor_cabecera a:hover{
-    color: #AA1515;
-    font-weight: bold;
-}
+/*UNDERLINE DE LAS OPCIONES DEL MENÚ AL PASAR EL CURSOR*/
 .contenedor_cabecera a:hover::after{
     transform: translateX(-50%) scaleX(1);
 }
+/*TEXTO DEL MENÚ AL PASAR EL CURSOR*/
+.contenedor_cabecera a:hover{
+    font-weight: bold;
+    color: #E21C1C;
+}
+/*BOTON REALIZA TU PEDIDO AQUÍ (HEADER)*/
 .btn_whatsapp{
     position: relative;
     background-color: #E21C1C;
@@ -62,45 +74,76 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 10px;
+    padding: 3px 3px;
     border-radius: 25px;
-    width: 360px;
-    height: 45px;
+    width: 315px;
+    height: 35px;
+    margin-left: auto;
 }
+/*TEXTO DENTRO DE BOTON REALIZA TU PEDIDO AQUÍ*/
 .btn_whatsapp a{
     color: white;
     margin-left: 10px;
 }
+/*IMG DE WHATSAPP DENTRO DE BOTON REALIZA TU PEDIDO AQUÍ*/
 .btn_whatsapp img{
-    height: 100%;
-    width: 28px;
+    height: 70%;
+    width: 20px;
     color: white;
 }
 .btn_whatsapp:hover{
     background-color: #AA1515;
-    font-weight: bold;
     cursor: pointer;
 }
 .btn_whatsapp a:hover{
     color: white;
+    text-decoration: none;
 }
 .rPedido{
+    position: sticky;
     background-color: #AA1515;
-    height: 60px;
+    height: 40px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 60px;
+    z-index: 999;
 }
 .rPedido img{
-    width: 38px;
-    height: 100%;
-    margin-right: 10px;
+    width: 25px;
+    height: 50%;
+    margin-right: 25px;
 }
 .rPedido a{
     text-decoration: none;
     color: white;
 }
+/*===== BANNER =====*/
+.hero{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    margin-bottom: 1px;
+    z-index: 998;
+}
+/*CONTENIDO VISUAL DEL BANER (VIDEOS O IMAGENES) */
+.hero img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    }
+/*TEXTO SOBRE EL VIDEO*/
+.hero .texto{
+    color: rgb(252, 252, 252);
+    text-align: left;
+    position:absolute;
+    top: 40vh;
+    left: 30vw;
+    font-size: 80px;
+    }
+
 
 /*=======================================*/
 /*================MAIN*==================*/
@@ -300,15 +343,64 @@ section h3 {
 
 
 /*===============FOOTER==================*/
-.contenedor-footer{
-    background-color: #EA4141;
-    color: white;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer {
+  background-color: #ffffff;
+  color: #3C3636;
+  padding: 40px 20px 20px;
+  font-family: "Montserrat", sans-serif;
 }
-.contenedor-footer a{
-    text-decoration: none;
-    color: white;
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer__brand {
+  flex: 1 1 200px;
+}
+.footer__brand img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.footer__social a {
+  margin-right: 10px;
+  color: #3C3636;
+  font-size: 20px;
+}
+
+.footer__section {
+  flex: 1 1 200px;
+}
+.footer__section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.footer__section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer__section ul li {
+  margin-bottom: 6px;
+}
+.footer__section ul li a {
+  color: #3C3636;
+  text-decoration: none;
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer__section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__payments img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer__bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
 }
