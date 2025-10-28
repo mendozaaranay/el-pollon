@@ -175,7 +175,24 @@
   font-weight: 600;
   line-height: 1.5;
 }
-
+/* Botones del slider */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(90, 72, 72, 0.4);
+  color: #f5eaea;
+  border: none;
+  font-size: 1.5 rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  z-index: 20;         
+  transition: background 0.3s;
+}
+.prev-btn:hover, .next-btn:hover { background: rgba(73, 57, 57, 0.7); }
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
 
 
 /*=================== SECCIONES DEL MENÚ ===================*/
