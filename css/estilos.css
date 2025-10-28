@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
-    font-size: 16px;
+    font-size: 11px;
 }
 /*===== BARRA DE NAVEGACIÓN =====*/
 /*CABECERA*/
@@ -27,13 +27,20 @@
 .contenedor_cabecera .logo{
     cursor: pointer; 
     margin-right: auto;
-    margin:10px ;
+    padding: 0;
+    margin:0 ;
+    display: flex;
+    align-items: center;
+    height: 40px;
 }
 /*CONTENEDOR DE IMAGEN LOGO*/
 .contenedor_cabecera .logo img{
-    height: 60px;
+    height: 40px;
     width: 100%;
     padding-top: 0px;
+}
+.sin-linea::after {
+    display: none;
 }
 /*MENÚ DE OPCIONES EN LA CABECERA*/
 .contenedor_cabecera a{
@@ -77,8 +84,8 @@
     justify-content: center;
     padding: 3px 3px;
     border-radius: 25px;
-    width: 315px;
-    height: 35px;
+    width: 250px;
+    height: 34px;
     margin-left: auto;
 }
 /*TEXTO DENTRO DE BOTON REALIZA TU PEDIDO AQUÍ*/
@@ -103,7 +110,7 @@
 .rPedido{
     position: sticky;
     background-color: #AA1515;
-    height: 30px;
+    height: 25px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -112,9 +119,9 @@
     z-index: 999;
 }
 .rPedido img{
-    width: 20px;
+    width: 15px;
     height: 50%;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 .rPedido a{
     text-decoration: none;
@@ -173,7 +180,7 @@
 }
 
 #menu h2 {
-    color: #EA4141;
+    color: #E21C1C;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -211,7 +218,7 @@
 }
 
 .menu-item strong {
-    color: #EA4141;
+    color: #E21C1C;
     font-size: 18px;
 }
 
@@ -230,7 +237,7 @@ section h3 {
 }
 
 #menu h2 {
-    color: #EA4141;
+    color: #E21C1C;
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -268,7 +275,7 @@ section h3 {
 }
 
 .menu-item strong {
-    color: #EA4141;
+    color: #E21C1C;
     font-size: 18px;
 }
 
@@ -287,7 +294,7 @@ section h3 {
 }
 
 #nosotros h2 {
-    color: #EA4141;
+    color: #E21C1C;
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -315,7 +322,7 @@ section h3 {
 }
 
 #ayuda h2 {
-    color: #EA4141;
+    color: #E21C1C;
     font-size: 28px;
     text-align: center;
     margin-bottom: 30px;
@@ -329,7 +336,7 @@ section h3 {
 }
 
 #ayuda h4 {
-    color: #EA4141;
+    color: #E21C1C;
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
@@ -344,7 +351,7 @@ section h3 {
 
 /*=================== ESTILO DE BOTONES ===================*/
 .menu-item button {
-    background-color: #EA4141;
+    background-color: #E21C1C;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -355,7 +362,7 @@ section h3 {
 }
 
 .menu-item button:hover {
-    background-color: #EA4141;
+    background-color: #AA1515;
 }
 
 .linea-separadora {
@@ -366,13 +373,89 @@ section h3 {
   margin-top: 0;
 }
 
+/*=============== LOCALES ===============*/
+#locales {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.locales-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Columna izquierda */
+.locales-info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locales-info h2 {
+  color: #E21C1C;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.locales-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.btn-menu {
+  background-color: #E21C1C;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover {
+  background-color: #AA1515;
+}
+
+/* Columna derecha */
+.locales-lista {
+  flex: 2 1 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.local {
+  background-color: #fff6f6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.local h3 {
+  color: #E21C1C;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.local p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 6px;
+}
 
 /*===============FOOTER==================*/
 .footer {
   background-color: #ffffff;
   color: #3C3636;
-  padding: 40px 20px 20px;
-  font-family: "Montserrat", sans-serif;
+  padding: 30px 20px 20px;
 }
 
 .footer__container {
@@ -386,13 +469,13 @@ section h3 {
   flex: 1 1 200px;
 }
 .footer__brand img {
-  width: 120px;
+  width: 100px;
   margin-bottom: 10px;
 }
 .footer__social a {
   margin-right: 10px;
-  color: #EA4141;
-  font-size: 20px;
+  color: #E21C1C;
+  font-size: 28px;
 }
 
 .footer__section {
