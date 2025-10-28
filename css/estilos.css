@@ -128,49 +128,80 @@
     color: white;
 }
 /*===== BANNER =====*/
-.hero{
-    position: relative;
-    width: 100%;
-  height: 80vh;
-    overflow: hidden;
-    margin-bottom: 1px;
-    
-    z-index: 998;
+/* === SLIDER GENERAL === */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 550px; /* puedes ajustar la altura */
+  overflow: hidden;
 }
 
-/* Imagen del banner */
-.hero img {
-    width: 100%;
+.slide {
+  position: absolute;
+  width: 100%;
   height: 100%;
-    object-fit: cover;
-  filter: brightness(75%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-/* Contenedor del texto */
-.texto-hero {
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === TEXTO DEL BANNER === */
+.texto {
   position: absolute;
   top: 50%;
-  left: 10%; 
+  left: 10px; 
   transform: translateY(-50%);
   color: white;
-  text-align: left; 
-  max-width: 500px; 
+  max-width: 650px; 
+  
+
+  padding: 30px 40px;
+  border-radius: 10px;
 }
 
-/* Estilo del título */
-.texto-banner h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
+/* Título principal */
+.texto h2 {
+  font-size: 2.9rem;
+  font-weight: 1200;
   margin-bottom: 15px;
-  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-/* Estilo del párrafo */
-.texto-banner p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  font-weight: 400;
+/* Párrafo */
+.texto p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
+/* Botones del slider */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(90, 72, 72, 0.4);
+  color: #f5eaea;
+  border: none;
+  font-size: 1.5 rem;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  z-index: 20;         
+  transition: background 0.3s;
+}
+.prev-btn:hover, .next-btn:hover { background: rgba(73, 57, 57, 0.7); }
+.prev-btn { left: 5px; }
+.next-btn { right: 5px; }
+
 
 /*=================== SECCIONES DEL MENÚ ===================*/
 /* Sección general */
