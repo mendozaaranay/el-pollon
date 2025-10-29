@@ -162,16 +162,14 @@
   left: 10px; 
   transform: translateY(-50%);
   color: white;
-  max-width: 650px; 
-  
-
+  max-width: 550px; 
   padding: 30px 40px;
   border-radius: 10px;
 }
 
 /* Título principal */
 .texto h2 {
-  font-size: 2.9rem;
+  font-size: 5.9rem;
   font-weight: 1200;
   margin-bottom: 15px;
   line-height: 1.2;
@@ -179,7 +177,7 @@
 
 /* Párrafo */
 .texto p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.5;
 }
