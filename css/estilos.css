@@ -205,13 +205,41 @@
 
 /*=================== SECCIONES DEL MENÚ ===================*/
 /* Sección general */
+
+
+
+/* CATEGORIAS */
+.categorias {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.menu-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.menu-icons div {
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-icons img {
+  width: 150px;
+  height: 150px;
+}
+/* HHHH */
 #menu {
     text-align: center;
     padding: 40px 20px;
 }
 
 #menu h2 {
-    color: #E21C1C;
+    color: #8a7878;
     font-size: 28px;
     margin-bottom: 10px;
 }
